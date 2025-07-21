@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 350px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    #result, #table-result {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+      white-space: pre-wrap;
+    }
+    #status {
+      color: #666;
+      font-style: italic;
+    }
+    .input-group {
+      margin-bottom: 10px;
+    }
+    button {
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="status"></div>
+  <div id="result"></div>
+  
+  <div class="input-group">
+    <input type="text" id="orderNumber" placeholder="№ заявки или №,№" maxlength="13">
+    <button id="calculateBtn">Посчитать</button>
+  </div>
+  
+  <div id="table-result"></div>
+  
+  <script src="popup.js"></script>
+  <script>
+    document.addEventListener('mousedown', (e) => {
+      e.stopPropagation();
+    });
+  </script>
+</body>
+</html>

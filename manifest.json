@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "SPS Helper",
+  "version": "1.0",
+  "description": "Извлекает данные мастера и анализирует таблицу заявок",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon48.png"
+  }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "web_accessible_resources": [{
+    "resources": ["masters.json"],
+    "matches": ["<all_urls>"]
+  }],
+  "icons": {
+    "48": "icon48.png"
+  }
+}
